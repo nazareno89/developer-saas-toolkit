@@ -1,0 +1,13 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Developer SaaS Toolkit",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/itsmechlark/features/postgresql:1": {
+			"version": "latest"
+		}
+	}
+}
