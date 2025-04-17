@@ -7,7 +7,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    throw new Error('This is a test error');
     return this.appService.getHello();
   }
 }
