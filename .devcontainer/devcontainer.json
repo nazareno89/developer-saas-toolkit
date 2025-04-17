@@ -9,5 +9,8 @@
 		"ghcr.io/itsmechlark/features/postgresql:1": {
 			"version": "latest"
 		}
-	}
+	},
+	"forwardPorts": [
+		3000
+	]
 }
