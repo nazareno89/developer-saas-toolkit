@@ -1,9 +1,9 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
 	"name": "Developer SaaS Toolkit",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
 	"remoteUser": "node",
 	"features": {
 		"ghcr.io/itsmechlark/features/postgresql:1": {
@@ -11,6 +11,14 @@
 		}
 	},
 	"forwardPorts": [
-		3000
-	]
+		3000,
+		5432
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Prisma.prisma"
+			]
+		}
+	}
 }
